@@ -84,9 +84,8 @@ class DbDAO(object):
                 :task,
                 0,
                 :name
-            ) RETURNING *
+            )
             ''', data)
-        return self._map_single_row(inserted)
 
     def update(self, id, data):
         # OPPGAVE: Skriv SQL som oppdaterer den gitte raden i tabellen
